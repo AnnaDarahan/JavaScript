@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Задание №1-->
+    <script src="js/first-js.js"></script>
+    <title>JavaScript - Homework1</title>
+  </head>
+  <body>
+    <!--Второй способ подключения JS к html - 
+  непосредственно его прописать 
+  <script>
+  console.log("My first debug")
+  </script>-->
+    <script>
+      //Задание №2, №3
+      let name = "Mary";
+      console.log(name);
+      let age = "8";
+      console.log(age);
+      age = "7";
+      console.log(age);
+      //Задание №4
+      //В случае с null оператор typeof вернет object. Это баг языка JavaScript. (c)
+      let knowledge = null;
+      let salary;
+      let diligence = true;
+      let greeting = `Hi, my lovely ${name}!`;
+      let day = 1;
+      let person = {
+        name: "{Anna}",
+        surname: "{Darahan}",
+        isActive: true,
+      };
+      console.log(typeof knowledge);
+      console.log(typeof salary);
+      console.log(typeof diligence);
+      console.log(typeof greeting);
+      console.log(typeof day);
+      console.log(typeof person);
+      //Задание №5
+      const student = {
+        name: "{Anna}",
+        surname: "{Darahan}",
+        isActive: true,
+      };
+      console.log(typeof student.isActive);
+      //Задание №6
+      var allMassive = [];
+
+      allMassive[0] = {
+        name: "Fruits",
+      };
+      allMassive[1] = {
+        name: "Students",
+      };
+      allMassive[2] = {
+        name: "Numbers",
+      };
+      var Fruits = ["strawberry", "peach", "pineapple", "apple", "mango"];
+      var Students = ["Darahan", "Popova", "Izotov", "Mashkova", "Oleshko"];
+      var Numbers = ["1", "2", "3", "4", "5"];
+      //Задание со звёздочкой №1
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      numbers[0];
+      numbers[numbers.length - 1];
+      //Задание со звёздочкой №2
+      let lessonStudent = `студент: ${student.name} ${student.surname}, сейчас активен: ${student.isActive}!`;
+      console.log(lessonStudent);
+    </script>
+  </body>
+</html>
